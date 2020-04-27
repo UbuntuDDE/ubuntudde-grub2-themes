@@ -1,9 +1,27 @@
 #!/bin/sh
 set -e
-if [ "$1" = configure ];then
-    if [ -x /usr/lib/deepin-daemon/grub2 ];then
-        /usr/lib/deepin-daemon/grub2 --setup-theme
-    fi
-fi
+
+case "$1" in
+    configure)
+	if [ -x /usr/lib/deepin-daemon/grub2 ];then
+		/usr/lib/deepin-daemon/grub2 --setup-theme
+	fi
+        grep "GRUB_THEME=" /etc/default/grub 2>&1 >/dev/null && sed -i '/GRUB_THEME=/d' /etc/default/grub
+        echo "GRUB_THEME=\"/boot/grub/themes/Slaze/theme.txt\"" >> /etc/default/grub
+        update-grub
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0
+
 
 #DEBHELPER#
