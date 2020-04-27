@@ -1,15 +1,9 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: grub-themes-deepin
-Source: <url://example.com>
-
-Files: *
-Copyright: 2015 LinuxDeepin Project
-License: Creative Commons Public Licenses
- The comlete text of Licenses can be found 
- in "/usr/share/doc/grub-themes-deepin/LICENSE.gz".
+Upstream-Name: grub-themes-ubuntudde
+Source: https://github.com/vinceliuice/grub2-themes
 
 Files: debian/*
-Copyright: 2015 Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Copyright: 2020 Arun Kumar Pariyar <expertaruncorp@gmail.com>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

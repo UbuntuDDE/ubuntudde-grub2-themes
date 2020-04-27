@@ -1,15 +1,14 @@
-Source: grub-themes-deepin
+Source: grub-themes-ubuntudde
 Section: universe/misc
 Priority: extra
-Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Maintainer: Arun Kumar Pariyar <expertaruncorp@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.5
-Homepage: http://www.deepin.org/
-#Vcs-Git: git://git.debian.org/collab-maint/grub-themes-dharma.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/grub-themes-dharma.git;a=summary
+Homepage: https://github.com/vinceliuice/grub2-themes
+Vcs-Git: https://github.com/vinceliuice/grub2-themes
 
-Package: grub-themes-deepin
+Package: grub-themes-ubuntudde
 Architecture: all
 Depends: grub2-common, ${misc:Depends},
-Description: Deepin theme for grub2
- Beautiful grub2 theme made by Linuxdeepin with some midified pics.
+Description: UbuntuDDE theme for grub2
+ Beautiful grub2 theme made by vinceliuice https://github.com/vinceliuice/grub2-themes .
