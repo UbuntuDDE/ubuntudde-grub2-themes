@@ -1,5 +1,7 @@
 # GRUB2 gfxmenu Linux theme
 # Designed for any resolution
+# Designed by vinceliuice 
+# Original Source : https://github.com/vinceliuice/grub2-themes
 
 # Global Property
 title-text: ""

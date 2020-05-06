@@ -21,7 +21,7 @@ set -e
 
 case "$1" in
     purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
-        sed -i '/Slaze\/theme.txt/d' /etc/default/grub
+        sed -i '/ubuntudde\/theme.txt/d' /etc/default/grub
         update-grub
     ;;
 
