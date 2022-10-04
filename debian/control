@@ -1,14 +1,17 @@
 Source: grub-themes-ubuntudde
 Section: universe/misc
 Priority: extra
-Maintainer: Arun Kumar Pariyar <expertaruncorp@gmail.com>
-Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.5
+Maintainer: Arun Kumar Pariyar <openarungeek@gmail.com>
+Build-Depends:
+ debhelper-compat (=13),
+Standards-Version: 4.5.1
 Homepage: https://github.com/vinceliuice/grub2-themes
 Vcs-Git: https://github.com/vinceliuice/grub2-themes
 
 Package: grub-themes-ubuntudde
 Architecture: all
-Depends: grub2-common, ${misc:Depends},
+Depends:
+ grub2-common,
+ ${misc:Depends},
 Description: UbuntuDDE theme for grub2
  Beautiful grub2 theme made by vinceliuice https://github.com/vinceliuice/grub2-themes .
